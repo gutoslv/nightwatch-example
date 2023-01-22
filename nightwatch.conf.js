@@ -14,23 +14,23 @@
 module.exports = {
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
-  src_folders: ['tests','nightwatch/examples'],
+  src_folders: ['tests'],
 
   // See https://nightwatchjs.org/guide/concepts/page-object-model.html
-  page_objects_path: ['nightwatch/page-objects'],
+  page_objects_path: ['pages'],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-commands.html
-  custom_commands_path: ['nightwatch/custom-commands'],
+  custom_commands_path: ['custom-commands'],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-assertions.html
-  custom_assertions_path: ['nightwatch/custom-assertions'],
+  custom_assertions_path: ['custom-assertions'],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/adding-plugins.html
   plugins: [],
-  
+
   // See https://nightwatchjs.org/guide/concepts/test-globals.html
   globals_path: '',
-  
+
   webdriver: {},
 
   test_workers: {
@@ -40,7 +40,7 @@ module.exports = {
   test_settings: {
     default: {
       disable_error_log: false,
-      launch_url: 'http://localhost',
+      launch_url: 'https://mdn.github.io/todo-react/',
 
       screenshots: {
         enabled: false,
@@ -51,14 +51,14 @@ module.exports = {
       desiredCapabilities: {
         browserName: 'chrome'
       },
-      
+
       webdriver: {
         start_process: true,
         server_path: ''
       },
-      
+
     },
-    
+
     chrome: {
       desiredCapabilities: {
         browserName: 'chrome',
@@ -84,13 +84,13 @@ module.exports = {
         ]
       }
     },
-    
+
   },
-  
+
   usage_analytics: {
     enabled: true,
     log_path: './logs/analytics',
     client_id: '5d1e41f1-9a43-41d3-b378-456852e0cc7e'
   }
-  
+
 };
