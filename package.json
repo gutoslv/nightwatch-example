@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nightwatch tests --env chrome"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@testing-library/nightwatch": "^2.0.0",
     "chromedriver": "^109.0.0",
     "nightwatch": "^2.6.10"
   }
